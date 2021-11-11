@@ -1,0 +1,36 @@
+//API REST Client with REST Client for VC
+@api = http://localhost:5000/users
+
+GET {{api}}
+
+###
+GET {{api}}/11
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "email" : "kev@kev.cl",
+    "userName": "ani",
+    "password": "142536",
+    "givename": "Kev",
+    "surname": "example",
+    "birthday": "2021-11-30"
+}
+
+###
+DELETE  {{api}}/7
+
+###
+PUT  {{api}}/11
+Content-Type: application/json
+
+{
+    "email" : "kev@kk.cl",
+    "userName": "keke",
+    "password": "99999",
+    "givename": "kev",
+    "surname": "example2",
+    "birthday": "2021-11-29"
+}
